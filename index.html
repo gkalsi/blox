@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- start Mixpanel --><script type="text/javascript">(function(c,b){var a,d,h,e;a=c.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===c.location.protocol?"https:":"http:")+'//api.mixpanel.com/site_media/js/api/mixpanel.2.js';d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(a,d);b._i=[];b.init=function(a,c,f){function d(a,b){var c=b.split(".");2==c.length&&(a=a[c[0]],b=c[1]);a[b]=function(){a.push([b].concat(Array.prototype.slice.call(arguments,0)))}}var g=b;"undefined"!==typeof f?g=
+b[f]=[]:f="mixpanel";g.people=g.people||[];h="disable track track_pageview track_links track_forms register register_once unregister identify name_tag set_config people.set people.increment".split(" ");for(e=0;e<h.length;e++)d(g,h[e]);b._i.push([a,c,f])};window.mixpanel=b})(document,window.mixpanel||[]);
+mixpanel.init("6fd96477ba7f64ca5a85b17d7de1739a");</script><!-- end Mixpanel -->
+		<title>Blox*</title>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<style type="text/css">
+			@font-face {
+			    font-family: 'UbuntuRegular';
+			    src: url('f/Ubuntu-R.ttf');
+			}​
+		</style>
+	</head>
+	<body onkeydown="keyPress(event);">
+		<canvas id="screen" width="640px" height="480px">
+		</canvas>
+	</body>
+	<script type="text/javascript" src="js/colours.js"></script>
+	<script type="text/javascript" src="js/block.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var c = document.getElementById("screen");
+			myCtx = new TetrisContext(c);
+			myCtx.setupContext();
+			myCtx.addBlock();
+			gameClock = setInterval("myCtx.tick()", 250);
+		});
+
+	</script>
+</html>
