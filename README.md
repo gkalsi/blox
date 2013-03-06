@@ -3,7 +3,7 @@ HTML BLOX
 
 Try me!
 -------
-Try a live demo here: http://goo.gl/I54wF
+Try a live demo [here](http://blox.gurjantkalsi.com).
 
 
 About
