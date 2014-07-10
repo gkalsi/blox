@@ -17,4 +17,4 @@ LEFT - Move left
 RIGHT - Move Right
 SPACE - Hard Drop
 
-There is no soft drop as of yet
+There are no soft drops as of yet.
